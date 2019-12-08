@@ -20,6 +20,10 @@ from fairseq.trainer import Trainer
 from fairseq.meters import AverageMeter, StopwatchMeter
 
 
+
+from trains import Task
+task = Task.init(project_name="fairseq", task_name="transformer")
+
 def main(args, init_distributed=False):
     utils.import_user_module(args)
 
